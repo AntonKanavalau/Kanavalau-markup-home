@@ -1,0 +1,27 @@
+body{
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 50px;
+}
+
+nav{
+    position: fixed;
+    left: 100px;
+    top: 20%;
+    padding: 10px;
+    background: #ffe;
+    border: 1px solid #333;
+}
+
+/*div.image{
+    display: block;
+    align-content: center;
+} */
+
+ul{
+    list-style-type: square;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
