@@ -1,7 +1,3 @@
-h1, h2, h3, h4 {
-    color: #fda401;
-}
-
 h1 {
     text-align: right;
 }
@@ -10,12 +6,33 @@ h2 {
     text-align: left;
 }
 
+h1, h2, h3, h4 {
+    color: #fda401;
+}
+
 ul+h2 {
     color: #0000fe;
 }
 
 em, i {
+    font-weight: bold;
     background: #007f01;
     color: #ffffff;
+}
+
+li>span {
     font-weight: bold;
+}
+
+
+#gray {
+    color: #848f9b;
+}
+
+li:nth-of-type(2) :not(span){
+    color: #fd171f;
+}
+
+#green {
+    color: #117f01;
 }
