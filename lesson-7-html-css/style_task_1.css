@@ -29,12 +29,12 @@ li > span {
     font-weight: bold;
 }
 
-#gray {
-    color: #848f9b;
+ol li {
+    color: gray;
 }
 
-#green {
-    color: #117f01;
+ul ~ ul li ol li {
+    color: green;
 }
 
 /* Думаю, тут по-любому нужно ставить id, чтобы ограничить влияние.
@@ -63,12 +63,13 @@ tr:nth-child(2) {
     font-weight: bold;
 }
 
-.name {
-    color: #fda40c;
+tr ~ tr ~ tr td {
+    text-align: left;
+    color: orange;
 }
 
-td[class] ~ td {
+tr ~ tr ~ tr td + td {
     text-align: center;
+    background-color: green;
     color: white;
-    background: #007f01;
 }
