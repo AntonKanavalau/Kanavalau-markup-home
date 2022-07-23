@@ -32,27 +32,29 @@ nav li {
 }
 
 ul.menu > li:hover > ul.submenu{
-    display: inline;
+    display: block;
+
 }
 
 .submenu {
     display: none;
-    float: left;
-    vertical-align: baseline;
-    width: 100%;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ededed;
     position: absolute;
-    z-index: 5;
-}
+    float: left;
+    width: auto;
+    overflow: hidden;
+    padding: 0;
+    background-color: #ededed;
+    z-index: 1;
 
+}
+/*Как будет выглядеть внутри свернутого контейнера состоянии*/
 .submenu li a {
+    display: block;
     color: #9fa1a7;
     font-size: 16px;
     padding: 16px;
 }
-
+/*Как будут выглядеть вложенные ссылки ссылки при наведении на них*/
 .submenu li a:hover {
     background: #a4a4a4;
     color: #4c5050;
