@@ -1,0 +1,51 @@
+nav {
+    background: #beb11c;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+}
+
+.menu {
+    padding: 0;
+}
+
+.menu li a {
+    padding: 11px 16px;
+    text-decoration: none;
+    color: white;
+    line-height: 38px;
+}
+
+.menu li a:hover {
+    background: green;
+    color: aqua;
+}
+
+ul.menu > li:hover > ul.submenu{
+    display: inline;
+}
+
+.submenu {
+    display: none;
+    float: left;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+}
+
+.submenu li a {
+    color: aqua;
+    font-size: 12px;
+    padding: 16px;
+}
+
+.submenu li a:hover {
+    background: blueviolet;
+    color: aqua;
+}
