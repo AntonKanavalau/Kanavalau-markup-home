@@ -1,0 +1,19 @@
+a[title^="Яндекс"] {
+    color: #f70;
+}
+
+/**[target="_blank"]::after {
+    content: "⇱";
+    text-decoration-line: none;
+
+}*/
+
+li[class="target"]::after {
+    content: "⇱";
+    color: #f70;
+}
+
+
+.google {
+    color: #666;
+}
