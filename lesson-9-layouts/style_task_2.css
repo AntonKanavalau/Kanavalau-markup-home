@@ -2,24 +2,63 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 li {
-    display: inline;
+    display:inline-block;
+    text-align: center;
+    margin: 0 1px;
 }
 
 a {
-    text-decoration: none;
+    color: #9e38cd;
+    background: #fff;
+    text-decoration-line: none;
 }
 
-.first:before {
-    padding: 0 5px;
-    content: "«";
+a {
+    padding: 5px 10px;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    text-align: justify;
 }
 
-.last:after {
-    padding: 0 5px;
+a:hover {
+    color: #fff;
+    background: #a03bce;
+    border: 1px solid #7f19ba;
+    text-shadow: #711da6 1px 1px 1px;
+}
+
+a.on{
+    color: #fff;
+    background: #a03bce;
+    border: 1px solid #7f19ba;
+    border-radius: 5px;
+    text-shadow: #711da6 1px 1px 1px;
+}
+
+a.first, a.last{
+    border: none;
+}
+
+a.first {
+    margin: 0 10px 0 20px;
+}
+
+a.last {
+    margin: 0 20px 0 10px;
+}
+
+a.first:before {
+    padding: 0 5px 0 0;
+    content: "«"; /*Вот как их выравнять?*/
+}
+
+a.last:after {
+    padding: 0 0 0 5px;
     content: "»";
 }
