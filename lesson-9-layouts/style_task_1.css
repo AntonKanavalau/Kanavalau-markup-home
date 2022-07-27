@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+
+.red, .green, .blue {
+    border-radius: 10px;
+    color: white;
+    margin: 0 2px;
+    padding: 2px 10px;
+}
+
+.red {
+    background: #fd0001;
+}
+
+.green {
+    background: #007f01;
+}
+
+.blue {
+    background: #0000fe;
+}
+
+label {
+    font-weight: bold;
+    text-decoration-line: underline;
+    margin: 0 30px;
+}
+
+label[for="red"] {
+    color: #fd0001;
+}
+
+label[for="green"] {
+    color: #007f01;
+}
+
+label[for="blue"] {
+    color: #0000fe;
+}
+
+input#red, input#green, input#blue{
+    display: none;
+}
