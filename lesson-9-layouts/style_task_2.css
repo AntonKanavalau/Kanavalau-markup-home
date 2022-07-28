@@ -8,7 +8,7 @@ body {
 }
 
 li {
-    display:inline-block;
+    display: inline-block;
     text-align: center;
     margin: 0 1px;
 }
@@ -33,7 +33,7 @@ a:hover {
     text-shadow: #711da6 1px 1px 1px;
 }
 
-a.on{
+a.on {
     color: #fff;
     background: #a03bce;
     border: 1px solid #7f19ba;
@@ -41,7 +41,7 @@ a.on{
     text-shadow: #711da6 1px 1px 1px;
 }
 
-a.first, a.last{
+a.first, a.last {
     border: none;
 }
 
@@ -59,6 +59,7 @@ a.first:before {
 }
 
 a.last:after {
+
     padding: 0 0 0 5px;
     content: "»";
 }
