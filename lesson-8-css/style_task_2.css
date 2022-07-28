@@ -11,8 +11,18 @@ nav ul {
     list-style-type: none;
 }
 
+ul.submenu {
+    position: absolute;
+    left: 0;
+}
+
+ul.submenu + li {
+    position: relative;
+}
+
 nav li {
     display: inline;
+    position: relative;
 }
 
 .menu {
@@ -30,11 +40,13 @@ nav li {
     background: #ededed;
     color: #9fa1a7;
 }
+
 /*И как это чудо выровнять в один столбик?*/
-ul.menu > li:hover > ul.submenu{
+ul.menu > li:hover > ul.submenu {
     display: block;
 
 }
+
 /*Как будет выглядеть внутри свернутого контейнера*/
 .submenu {
     display: none;
@@ -54,6 +66,7 @@ ul.menu > li:hover > ul.submenu{
     font-size: 16px;
     padding: 16px;
 }
+
 /*Как будут выглядеть вложенные ссылки ссылки при наведении на них*/
 .submenu li a:hover {
     background: #a4a4a4;
