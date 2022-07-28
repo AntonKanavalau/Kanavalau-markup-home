@@ -41,7 +41,7 @@ nav li {
     color: #9fa1a7;
 }
 
-/*И как это чудо выровнять в один столбик?*/
+/*И к ак это чудо выровнять в один столбик?*/
 ul.menu > li:hover > ul.submenu {
     display: block;
 
