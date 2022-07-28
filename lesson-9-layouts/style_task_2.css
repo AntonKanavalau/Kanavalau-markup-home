@@ -54,12 +54,15 @@ a.last {
 }
 
 a.first:before {
+    display: inline-block;
+    transform: translateY(-1px);
     padding: 0 5px 0 0;
-    content: "«"; /*Вот как их выравнять?*/
+    content: "«";
 }
 
 a.last:after {
-
+    display: inline-block;
+    transform: translateY(-1px);
     padding: 0 0 0 5px;
     content: "»";
 }
