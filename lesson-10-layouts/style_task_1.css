@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 2em;
+}
+
+.card {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    width: 285px;
+    height: 455px;
+    padding: 0.3em;
+    background: #ed8029;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+h3 {
+    margin: 8%;
+    letter-spacing: 2px;
+}
+
+.inerblock {
+    box-sizing: content-box;
+    text-transform: uppercase;
+    text-align: center;
+    color: #35495a;
+    background: white;
+}
