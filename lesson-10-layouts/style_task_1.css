@@ -3,30 +3,102 @@
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 2em;
+    display: block;
+    text-align: center;
+
 }
 
 .card {
+    margin: 1%;
     display: inline-block;
     color: white;
     text-align: center;
-    text-transform: uppercase;
     width: 285px;
     height: 455px;
     padding: 0.3em;
     background: #ed8029;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
 
 h3 {
     margin: 8%;
+    font-size: 20px;
     letter-spacing: 2px;
+    font-stretch: condensed;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: auto;
+    font-weight: normal;
+}
+
+p {
+    margin: 3%;
+    font-weight: bold;
+    text-transform: none;
+}
+
+sup {
+    font-size: 25px;
+    text-transform: none;
+    vertical-align: text-top;
+}
+
+span {
+    font-size: 75px;
 }
 
 .inerblock {
-    box-sizing: content-box;
+    margin: auto;
+    padding: 5% 5% 5% 5%;
+    height: max-content;
     text-transform: uppercase;
     text-align: center;
     color: #35495a;
-    background: white;
+    background: #fff;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-transform: none;
+    text-align: left;
+    color: #8b8f97;
+}
+
+li {
+    margin-bottom: 0.5%;
+    padding: 1.5% 3% 1.5% 13%;
+    list-style: none;
+}
+
+li:before {
+    padding-right: 5%;
+    content: url("arrow.png");
+    height: 1%;
+}
+
+li:nth-child(odd) {
+    background: #e7f1fa;
+}
+
+li:nth-child(even) {
+    background: #f4f4f5;
+}
+
+button {
+    margin: 10% 0 6% 0;
+    padding: 5% 0;
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    background: #ed8029;
+    box-shadow: 0 2px 0 0 rgb(178, 86, 11);
+    border-radius: 3px;
 }
