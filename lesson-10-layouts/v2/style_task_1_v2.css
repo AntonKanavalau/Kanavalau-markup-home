@@ -9,35 +9,33 @@ body {
 }
 
 .card {
-    margin: 1%;
-    display: inline-block;
-    color: white;
-    text-align: center;
     width: 285px;
-    height: 455px;
-    padding: 0.3em;
+    height: auto;
+    padding: 0.2%;
     background: #ed8029;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
 
-h3 {
+.title_header {
     margin: 8%;
+    color: white;
     font-size: 20px;
     letter-spacing: 2px;
     font-stretch: condensed;
     text-transform: uppercase;
 }
 
-h2 {
-    margin: auto;
-    font-weight: normal;
+.innerblock {
+    height: 100%;
+    padding: 5%;
+    background: #fff;
 }
 
-p {
-    margin: 3%;
-    font-weight: bold;
-    text-transform: none;
+.title_2 {
+    font-size: 23px;
+    font-weight: normal;
+    text-transform: uppercase;
 }
 
 sup {
@@ -50,47 +48,39 @@ span {
     font-size: 75px;
 }
 
-.inerblock {
-    margin: auto;
-    padding: 5% 5% 5.7% 5%;
-    height: max-content;
-    text-transform: uppercase;
-    text-align: center;
-    color: #35495a;
-    background: #fff;
-}
-
-ul {
+.list {
     margin: 0;
-    padding: 0;
     font-size: 16px;
     text-transform: none;
     text-align: left;
     color: #8b8f97;
 }
 
-li {
-    margin-bottom: 0.5%;
-    padding: 1.5% 3% 1.5% 13%;
-    list-style: none;
+p{
+    margin: auto;
 }
 
-li:before {
+.list > p {
+    margin-bottom: 2px;
+    line-height: 30px;
+    padding-left: 10%;
+}
+
+.list > p:before {
     padding-right: 5%;
-    content: url("arrow.png");
+    content: url("../arrow.png");
     height: 1%;
 }
 
-li:nth-child(odd) {
+.list > p:nth-child(odd) {
     background: #e7f1fa;
 }
 
-li:nth-child(even) {
+.list > li:nth-child(even) {
     background: #f4f4f5;
 }
 
 button {
-    margin: 10% 0 6% 0;
     padding: 5% 0;
     width: 100%;
     font-size: 12px;
@@ -101,4 +91,5 @@ button {
     background: #ed8029;
     box-shadow: 0 2px 0 0 rgb(178, 86, 11);
     border-radius: 3px;
+    cursor: pointer;
 }
