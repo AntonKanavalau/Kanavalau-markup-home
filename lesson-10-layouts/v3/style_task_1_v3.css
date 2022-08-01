@@ -2,23 +2,35 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    margin: 2em;
-    text-align: center;
-    align-content: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
 }
 
+/* Card. Main-parameter*/
 .card {
-    display: inline-block;
-    margin: 0.5%;
-    width: 285px;
-    height: auto;
+    margin: 0.5em;
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+}
+
+/* Outblock. Orange block*/
+.outblock {
+    display: flex;
+    flex-direction: column;
     padding: 0.3em;
+    width: 285px;
     background: #ed8029;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
 
+/* Header card text*/
 .title_header {
+    display: flex;
+    flex-direction: column;
     margin: 8%;
     color: white;
     font-size: 20px;
@@ -27,18 +39,25 @@ body {
     text-transform: uppercase;
 }
 
+/* innerblock. White block*/
 .innerblock {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
     height: 100%;
     padding: 5%;
     background: #fff;
 }
 
-.title_2 {
+/* Title header. White block*/
+.title_innerblock {
     font-size: 23px;
     font-weight: normal;
     text-transform: uppercase;
 }
 
+
+/* SUMMA.Text transform*/
 .summa {
     margin: 3%;
     font-weight: bold;
@@ -55,16 +74,13 @@ span {
     font-size: 75px;
 }
 
+/* LIST decoration*/
 .list {
     margin: 5% 0;
     font-size: 16px;
     text-transform: none;
     text-align: left;
     color: #8b8f97;
-}
-
-p {
-    margin: auto;
 }
 
 .list > p {
@@ -85,19 +101,4 @@ p {
 
 .list > p:nth-child(even) {
     background: #f4f4f5;
-}
-
-.enroll {
-    margin: 5% 0;
-    padding: 5% 0;
-    width: 100%;
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-    border: none;
-    background: #ed8029;
-    box-shadow: 0 2px 0 0 rgb(178, 86, 11);
-    border-radius: 3px;
-    cursor: pointer;
 }
