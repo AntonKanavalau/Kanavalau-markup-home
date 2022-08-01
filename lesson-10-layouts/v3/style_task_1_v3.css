@@ -43,6 +43,7 @@ body {
 .innerblock {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     box-sizing: border-box;
     height: 100%;
     padding: 5%;
@@ -51,6 +52,8 @@ body {
 
 /* Title header. White block*/
 .title_innerblock {
+    display: flex;
+    flex-direction: column;
     font-size: 23px;
     font-weight: normal;
     text-transform: uppercase;
@@ -75,8 +78,12 @@ span {
 }
 
 /* LIST decoration*/
+p {
+    margin: auto;
+}
+
 .list {
-    margin: 5% 0;
+    margin: 0;
     font-size: 16px;
     text-transform: none;
     text-align: left;
@@ -101,4 +108,21 @@ span {
 
 .list > p:nth-child(even) {
     background: #f4f4f5;
+}
+
+/* Button style*/
+
+.enroll {
+    margin: 7% 0;
+    padding: 5% 0;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    background: #ed8029;
+    box-shadow: 0 2px 0 0 rgb(178, 86, 11);
+    border-radius: 3px;
+    cursor: pointer;
 }
