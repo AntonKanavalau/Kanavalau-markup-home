@@ -12,18 +12,35 @@ body {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", Arial, sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: inherit;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
 }
 
 /*Common styles for pricing block*/
+.card-block {
+    margin: 50px auto;
+}
+
 .pricing-block {
+    display: inline-block;
     border-radius: 5px;
     background: white;
-    box-shadow: 0 0 6px 3px #ddd;
-    font-family: "Open Sans", Arial, sans-serif;
+    color: white;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
     cursor: default;
+    transition: 0.5s;
 }
 
 .title {
@@ -105,18 +122,74 @@ body {
 
 /*Specific styles for BEST VALUE block*/
 .best-value {
-    margin: 50px auto;
+
     width: 290px;
-    border: 4px solid #ee8129;
+    border: 1px solid #e7e9eb;
 }
 
 .best-value .title {
-    color: white;
-    background: #ee8129;
+    transition: 0.5s;
+    border-radius: 5px 5px 0 0;
 }
 
 .best-value .cta-btn {
     color: white;
+}
+
+.best-value:hover {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.39);
+    transition: 0.5s;
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+.best-value:hover .title {
+    transition: 0.5s;
+    border-radius: 0;
+}
+
+
+/* BLUE. Color change*/
+.blue:hover {
+    border: 4px solid #37c1d2;
+}
+
+
+.blue .title {
+    background: #37c1d2;
+    border-radius: 5px 5px 0 0;
+}
+
+.blue .cta-btn {
+    background: #3371a5;
+    box-shadow: #16436a 0 3px 0 0;
+}
+
+/*ORANGE. Color change*/
+.orange:hover {
+    border: 4px solid #ee8129;
+}
+
+.orange .title {
+    background: #ee8129;
+}
+
+.orange .cta-btn {
     background: #ee8129;
     box-shadow: #b3560b 0 3px 0 0;
+}
+
+
+/* GREEN. Color change*/
+.green:hover {
+    border: 4px solid #1cb699;
+}
+
+.green .title {
+    background: #1cb699;
+}
+
+.green .cta-btn {
+    background: #3371a5;
+    box-shadow: #16436a 0 3px 0 0;
 }
