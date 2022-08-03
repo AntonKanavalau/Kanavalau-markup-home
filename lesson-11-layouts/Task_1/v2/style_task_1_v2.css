@@ -22,10 +22,6 @@ h1, h2, h3, h4, h5 {
     font-size: 30px;
 }
 
-h3 {
-    font-size: 20px;
-}
-
 /*Common styles for pricing block*/
 .card-block {
     margin: 50px auto;
@@ -122,13 +118,11 @@ h3 {
 
 /*Specific styles for BEST VALUE block*/
 .best-value {
-
     width: 290px;
     border: 1px solid #e7e9eb;
 }
 
 .best-value .title {
-    transition: 0.5s;
     border-radius: 5px 5px 0 0;
 }
 
@@ -136,28 +130,19 @@ h3 {
     color: white;
 }
 
-.best-value:hover {
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.39);
-    transition: 0.5s;
-    transform: scale(1.07);
-    cursor: pointer;
-}
-
 .best-value:hover .title {
     transition: 0.5s;
     border-radius: 0;
 }
 
-
 /* BLUE. Color change*/
-.blue:hover {
-    border: 4px solid #37c1d2;
+.blue {
+    transform: scale(0.96);
 }
-
 
 .blue .title {
     background: #37c1d2;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px 0 0 0;
 }
 
 .blue .cta-btn {
@@ -166,11 +151,15 @@ h3 {
 }
 
 /*ORANGE. Color change*/
-.orange:hover {
+.orange {
+    position: relative;
+    margin: auto -12px;
+    z-index: 1;
     border: 4px solid #ee8129;
 }
 
 .orange .title {
+    border-radius: 0;
     background: #ee8129;
 }
 
@@ -179,13 +168,13 @@ h3 {
     box-shadow: #b3560b 0 3px 0 0;
 }
 
-
 /* GREEN. Color change*/
-.green:hover {
-    border: 4px solid #1cb699;
+.green {
+    transform: scale(0.96);
 }
 
 .green .title {
+    border-radius: 0 5px 0 0;
     background: #1cb699;
 }
 

@@ -122,7 +122,6 @@ h3 {
 
 /*Specific styles for BEST VALUE block*/
 .best-value {
-
     width: 290px;
     border: 1px solid #e7e9eb;
 }
@@ -148,12 +147,10 @@ h3 {
     border-radius: 0;
 }
 
-
 /* BLUE. Color change*/
 .blue:hover {
     border: 4px solid #37c1d2;
 }
-
 
 .blue .title {
     background: #37c1d2;
@@ -178,7 +175,6 @@ h3 {
     background: #ee8129;
     box-shadow: #b3560b 0 3px 0 0;
 }
-
 
 /* GREEN. Color change*/
 .green:hover {
