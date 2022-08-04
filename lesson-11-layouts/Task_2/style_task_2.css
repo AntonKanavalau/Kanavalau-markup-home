@@ -1,19 +1,78 @@
 body {
     margin: auto 50px;
-    padding: 0;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     font-family: "Open Sans", Arial, sans-serif;
-    text-align: center;
+    /*text-align: center;*/
     background-color: black;
 }
 
 h2 {
+    margin: 20px;
     font-weight: inherit;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 50px;
+    text-align: center;
     color: #19466d;
 }
 
-h2>span {
+h2 > span {
     color: #ed8029;
 }
+
+
+.forum {
+    margin: auto;
+    position: relative;
+}
+
+
+/*Block avatar&message*/
+.forum-block {
+    margin: auto 30px;
+    position: absolute;
+    display: inline-block;
+    width: 50%;
+}
+
+/*Section line*/
+.forum-message > hr {
+    border-top: 2px dotted #666666;
+}
+
+/*Avatar image*/
+.forum-avatar {
+    display: inline-block;
+}
+
+.forum-avatar>img {
+    width: 100px;
+}
+
+/*Message block*/
+.forum-message {
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #fdfdfe;
+    text-align: left;
+    color: #7f7f80;
+}
+
+.forum-nickname, .forum-role {
+    display: inline-block;
+    width: 50%;
+    font-style: italic;
+    font-weight: 600;
+    color: #5b91c0;
+}
+.forum-role {
+    position: absolute;
+    box-sizing: border-box;
+    right: 15px;
+}
+
+.forum-nickname:before {
+    content: "- ";
+}
+
