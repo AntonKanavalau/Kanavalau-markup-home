@@ -1,17 +1,14 @@
 table {
     border-collapse: collapse;
-    background: white; /*А так все работает. Не отображается в инспекторе? Почему?*/
+    background: white;
 }
 
 tr, td {
     padding: 5px 10px;
     border-bottom: 1px solid #cbcbcb;
-    /* С этой строчкой перестает работать tr:nth-child(even)... Почему?
-    А если перенести в table, то работает.
-    background: white;
-    */
 
 }
+
 tr:nth-child(even) {
     background: #dceaf6;
 }
