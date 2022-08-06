@@ -5,20 +5,6 @@
     margin-top: 80px;
 }
 
-/*IMG&TEXT POSITION LEFT*/
-.fl {
-    float: left;
-    text-align: right;
-    padding-right: 16px;
-}
-
-/*IMG&TEXT POSITION RIGHT*/
-.fr {
-    float: right;
-    text-align: left;
-    padding-left: 16px;
-}
-
 /*IMAGES customers block*/
 .customer-img {
     display: inline-block;
@@ -35,9 +21,10 @@
     display: inline-block;
     position: absolute;
     top: 35%;
-    color: black;
     font-size: 25px;
+    text-align: right;
     width: 40%;
+    padding: 0 16px;
 }
 
 .customer-description > h1 {
@@ -54,4 +41,11 @@
     color: #b2b2b2;
     font-size: 35px;
     font-weight: bold;
+}
+
+/*IMG POSITION RIGHT*/
+.fr {
+    float: right;
+    text-align: left;
+    padding-left: 16px;
 }
