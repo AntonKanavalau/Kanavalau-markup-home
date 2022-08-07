@@ -9,7 +9,6 @@ body {
 }
 
 .packages-block {
-    cursor: default;
     color: black;
     position: relative;
     width: 70%;
@@ -22,7 +21,6 @@ body {
 
 a {
     text-decoration: none;
-    width: 70%;
 }
 
 /*ADD recommended status*/
