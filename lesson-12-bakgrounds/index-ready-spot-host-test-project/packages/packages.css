@@ -1,1 +1,5 @@
-/* Write your code here */
+body {
+    position: relative;
+    background: no-repeat url("../images/plans-background.jpg");
+}
+
