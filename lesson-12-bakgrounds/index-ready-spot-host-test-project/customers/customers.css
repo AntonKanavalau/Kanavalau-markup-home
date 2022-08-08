@@ -22,14 +22,12 @@
     position: absolute;
     top: 35%;
     font-size: 25px;
-    text-align: right;
-    width: 40%;
-    padding: 0 16px;
+    width: 30%;
 }
 
 .customer-description > h1 {
     color: #d83f2d;
-    font-size: 80px;
+    font-size: 70px;
     margin: 2px;
 }
 
@@ -39,13 +37,23 @@
 
 .customer-role {
     color: #b2b2b2;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 /*IMG POSITION RIGHT*/
 .fr {
     float: right;
+}
+.fr_t {
+    left: 0;
     text-align: left;
-    padding-left: 16px;
+    margin-left: 70px;
+}
+
+/*IMG POSITION Left*/
+.fl_t {
+    right: 0;
+    text-align: right;
+    margin-right: 70px;
 }
