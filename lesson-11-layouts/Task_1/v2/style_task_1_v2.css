@@ -1,0 +1,184 @@
+/*
+sizes 296x468
+orange colors ee8129
+dark orange shadow b3560b
+lightblue edf5fd
+lightgray f5f5f6
+25 font color 35495a
+iconic font color 3f4042
+list font color 888c94
+*/
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", Arial, sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: inherit;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+/*Common styles for pricing block*/
+.card-block {
+    margin: 50px auto;
+}
+
+.pricing-block {
+    display: inline-block;
+    border-radius: 5px;
+    background: white;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+    transition: 0.5s;
+}
+
+.title {
+    font-size: 23px;
+    font-weight: 600;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.content {
+    font-size: 23px;
+    font-weight: 600;
+    color: #3f4042;
+    padding: 18px 0 5px;
+    margin: 0;
+}
+
+.value {
+    font-size: 65px;
+    font-weight: 800;
+    line-height: 65px;
+    color: #35495a;
+    text-transform: none;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.value sup {
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    top: -10px;
+    left: -3px;
+}
+
+.value sub {
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    top: -5px;
+}
+
+.features {
+    list-style-type: none;
+    color: #888c94;
+    margin: 0 auto 17px;
+    padding: 0;
+    width: 90%;
+    font-size: 15px;
+    text-align: left;
+    text-transform: none;
+}
+
+.features > li {
+    background: url("../arrow.png") no-repeat;
+    background-position: 32px 11px;
+    padding: 7px 8px 8px 62px;
+    border-bottom: 1px solid white;
+}
+
+.features > li:nth-child(odd) {
+    background-color: #edf5fd;
+}
+
+.features > li:nth-child(even) {
+    background-color: #f5f5f6;
+}
+
+.cta-btn {
+    padding: 10px 0;
+    margin: 3px auto 30px;
+    width: 85%;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+}
+
+/*Specific styles for BEST VALUE block*/
+.best-value {
+    width: 290px;
+    border: 1px solid #e7e9eb;
+}
+
+.best-value .title {
+    border-radius: 5px 5px 0 0;
+}
+
+.best-value .cta-btn {
+    color: white;
+}
+
+.best-value:hover .title {
+    transition: 0.5s;
+    border-radius: 0;
+}
+
+/* BLUE. Color change*/
+.blue {
+    transform: scale(0.96);
+}
+
+.blue .title {
+    background: #37c1d2;
+    border-radius: 5px 0 0 0;
+}
+
+.blue .cta-btn {
+    background: #3371a5;
+    box-shadow: #16436a 0 3px 0 0;
+}
+
+/*ORANGE. Color change*/
+.orange {
+    position: relative;
+    margin: auto -12px;
+    z-index: 1;
+    border: 4px solid #ee8129;
+}
+
+.orange .title {
+    border-radius: 0;
+    background: #ee8129;
+}
+
+.orange .cta-btn {
+    background: #ee8129;
+    box-shadow: #b3560b 0 3px 0 0;
+}
+
+/* GREEN. Color change*/
+.green {
+    transform: scale(0.96);
+}
+
+.green .title {
+    border-radius: 0 5px 0 0;
+    background: #1cb699;
+}
+
+.green .cta-btn {
+    background: #3371a5;
+    box-shadow: #16436a 0 3px 0 0;
+}
