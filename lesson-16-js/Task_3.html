@@ -8,30 +8,22 @@
     <script>
       'use strict'
 
-      const x = prompt("Введите число");
-      const n = prompt("Введите степень");
+      var x = parseInt(prompt("Введите число"));
+      var n = parseInt(prompt("Введите степень"));
 
-      function pow(x, n) {
-        if (n === 0) {
-          return 1;
-        }
-        if (x === 0) {
-          return 0;
-        }
-        if (x === 1) {
-          return 1;
-        }
-
+      function maby() {
         var result = 1;
-        while (n !== 0) {
+        for (var i = 0; i < n; i++) {
           result *= x;
-          n = n - 1;
         }
 
+        console.log('Резульатат ' + result);
         return result;
       }
 
-      alert("Результат: " + pow(x, n));
+      console.log('Число -  ' + x);
+      console.log('Степень - ' + n);
+      alert('Результат - ' + maby());
     </script>
   </body>
 </html>
