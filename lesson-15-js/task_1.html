@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Task_1</title>
+  </head>
+  <body>
+    <script>
+      var
+        firstName = prompt('Ваше имя ?'),
+        surName = prompt('Ваша фамилия ?'),
+        patronymics = prompt('Ваша отчество ?'),
+        age = parseInt(prompt('Ваш возраст ?')),
+        gender = confirm('Ваш пол - мужской?'),
+        pension;
+      if (age > 60) {
+        pension = ' да';
+      } else {
+        pension = ' нет';
+      }
+      alert(`Ваше ФИО: ${firstName} ${surName} ${patronymics}` + '\n' +
+            'ваш возраст в годах: ' + age + '\n' +
+            `ваш возраст в днях: ${age*365}` + '\n' +
+            `через 5 лет вам будет: ${age+5}` + '\n' +
+            'ваш пол: мужской' + '\n' +
+            'вы на пенсии: ' + pension);
+    </script>
+  </body>
+</html>
