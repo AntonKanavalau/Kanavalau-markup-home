@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Task_3</title>
+  </head>
+  <body>
+    <script>
+      'use strict'
+
+      var x = parseInt(prompt("Введите число"));
+      var n = parseInt(prompt("Введите степень"));
+
+      function maby() {
+        var result = 1;
+        for (var i = 0; i < n; i++) {
+          result *= x;
+        }
+
+        console.log('Резульатат ' + result);
+        return result;
+      }
+
+      console.log('Число -  ' + x);
+      console.log('Степень - ' + n);
+      alert('Результат - ' + maby());
+    </script>
+  </body>
+</html>
