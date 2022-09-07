@@ -25,6 +25,7 @@ table {
 }
 
 /*Class settings*/
+/*General block*/
 .contentBody {
     height: 100vh;
     padding: 1.5rem;
@@ -43,6 +44,7 @@ table {
     border-radius: 5px
 }
 
+/*header block*/
 .contentBlock__header {
     display: flex;
     justify-content: space-between;
@@ -53,11 +55,13 @@ table {
     border-bottom: 1px solid #bbb;
 }
 
+/*header title*/
 .contentBlock__header-title {
     font-size: 2rem;
     font-weight: bold;
 }
 
+/*header buttin*/
 .contentBlock__header-button {
     padding-right: 1.5rem;
     transition: all 0.3s ease 0s;
@@ -73,6 +77,7 @@ table {
     font-size: 3rem;
 }
 
+/*content table*/
 .contentBlock__table {
     position: relative;
     overflow-y: auto;
@@ -96,8 +101,13 @@ table {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.contentBlockTable__body tr:hover {
+    background: rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease 0s;
+}
+
 /*
-<tr> в contentBlockTable__body является добавляемым элементом через кнопку.
+<tr> в contentBlockTable__body является добавляемым элементом через кнопкку, посредством JS.
 Поэтому нет смысла назначать ему класс.
 Все необходимое наследует из вышеуказанных классов.
 <td> внутри <tr> имеют произвольные индивицирующие классы (вдальнейшем можно изменить
