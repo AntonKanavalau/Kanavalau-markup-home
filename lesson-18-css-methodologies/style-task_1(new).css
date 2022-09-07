@@ -1,0 +1,105 @@
+/*Base settings*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: #f0f4f8;
+    font-family: 'Manrope', sans-serif;
+}
+
+button {
+    outline: none;
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+/*Class settings*/
+.contentBody {
+    height: 100vh;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+.contentBlock {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e3e6e8ff;
+    border-radius: 5px
+}
+
+.contentBlock__header {
+    display: flex;
+    justify-content: space-between;
+    z-index: 98;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #bbb;
+}
+
+.contentBlock__header-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.contentBlock__header-button {
+    padding-right: 1.5rem;
+    transition: all 0.3s ease 0s;
+}
+
+.contentBlock__header-button:hover {
+    opacity: 0.6;
+    transition: all 0.3s ease 0s;
+}
+
+.contentBlock__header-icon {
+    color: #2195f2;
+    font-size: 3rem;
+}
+
+.contentBlock__table {
+    position: relative;
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.contentBlock__table-head {
+    position: sticky;
+    top: 0;
+    height: 4rem;
+    font-size: 1.2rem;
+    text-align: left;
+    text-transform: uppercase;
+    color: #2195f2;
+    background: #fff;;
+}
+
+.contentBlockTable__body tr {
+    height: 4rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/*
+<tr> в contentBlockTable__body является добавляемым элементом через кнопку.
+Поэтому нет смысла назначать ему класс.
+Все необходимое наследует из вышеуказанных классов.
+<td> внутри <tr> имеют произвольные индивицирующие классы (вдальнейшем можно изменить
+на id), чтобы можно было достучаться с помощью js.
+*/

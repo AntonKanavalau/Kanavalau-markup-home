@@ -6,7 +6,7 @@
     }
 }
 
-/*base settings*/
+/*Base settings*/
 * {
     margin: 0;
     padding: 0;
@@ -16,10 +16,6 @@ body {
     height: 100vh;
     background: #f0f4f8;
     font-family: 'Manrope', sans-serif;
-}
-
-main {
-    height: 100vh;
 }
 
 /*MAIN block*/
@@ -39,16 +35,6 @@ screen and (max-height: 670px){
     .container {
         padding: 0.5rem;
     }
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    transition: all 0.3s ease 0s;
-}
-
-ul {
-    list-style: none;
 }
 
 .material-icons {
@@ -141,15 +127,6 @@ table {
     transition: all 0.3s ease 0s;
 }
 
-.color_block {
-    width: 1.2rem;
-    height: 1.2rem;
-    background: #fd171f;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-}
-
 .id {
     width: 2rem;
 }
@@ -165,5 +142,3 @@ table {
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #bbb;
 }
-
-
