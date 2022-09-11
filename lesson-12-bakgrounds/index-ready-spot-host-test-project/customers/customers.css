@@ -1,0 +1,60 @@
+.customer-container {
+    cursor: default;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-top: 80px;
+}
+
+/*IMAGES customers block*/
+.customer-img {
+    display: inline-block;
+    width: 60%;
+}
+
+.customer-img > img {
+    width: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
+}
+
+/*CUSTOMER DESCRIPTION*/
+.customer-description {
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    font-size: 25px;
+    width: 40%;
+}
+
+.customer-description > h1 {
+    color: #d83f2d;
+    font-size: 60px;
+    margin: 2px;
+}
+
+.customer-description > p {
+    margin: 0;
+}
+
+.customer-role {
+    color: #b2b2b2;
+    font-weight: bold;
+}
+
+/*IMG POSITION RIGHT*/
+.fr {
+    float: right;
+}
+
+.fr_t {
+    left: 0;
+    text-align: left;
+    padding: 70px;
+}
+
+/*IMG POSITION Left*/
+.fl_t {
+    right: 0;
+    text-align: right;
+    padding: 70px;
+}

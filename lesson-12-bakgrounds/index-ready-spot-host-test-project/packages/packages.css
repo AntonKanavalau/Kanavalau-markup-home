@@ -1,0 +1,77 @@
+body {
+    background: no-repeat url("../images/plans-background.jpg");
+}
+
+.packages-container {
+    display: inline-block;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.packages-block {
+    color: black;
+    position: relative;
+    width: 70%;
+    min-width: 500px;
+    margin-top: 30px;
+    padding: 40px 25px 25px 25px;
+    border: 3px solid #907372;
+    background: rgba(159, 159, 159, 0.86);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*ADD recommended status*/
+.rec:before {
+    content: "recommended";
+    position: absolute;
+    left: auto;
+    top: 15px;
+    right: 25px;
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #fd4021;
+}
+
+/*Content inside packages-block*/
+.packages-block_content > p {
+    margin-top: 10px;
+    padding: 10px;
+    color: #3a3a3a;
+    background: white;
+    border: 1px solid #7e7e7f;
+}
+
+.packages-block_content > h3 {
+    margin: 0;
+    line-height: 40px;
+}
+
+h3 > span {
+    text-transform: uppercase;
+}
+
+/*Position right*/
+.PR {
+    position: relative;
+    right: -30%;
+    text-align: right;
+}
+
+/*Premium block*/
+.PremB {
+    background: rgba(154, 89, 85, 0.89);
+}
+
+.subtitle {
+    color: #a8a8a8;
+}
+
+.title {
+    color: white;
+}
