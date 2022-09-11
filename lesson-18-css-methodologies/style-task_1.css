@@ -1,0 +1,115 @@
+/*Base settings*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: #f0f4f8;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+}
+
+button {
+    outline: none;
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+main {
+    height: 100vh;
+    padding: 1.5em;
+    box-sizing: border-box;
+}
+
+/*Class settings*/
+/*General block*/
+.contentBlock {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.5em;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e3e6e8ff;
+    border-radius: 5px
+}
+
+/*header*/
+.blockHeader {
+    display: flex;
+    justify-content: space-between;
+    z-index: 98;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #bbb;
+}
+
+/*header title*/
+.blockHeader__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/*header button*/
+.blockHeader__button {
+    padding-right: 1.5em;
+    transition: all 0.3s ease 0s;
+}
+
+.blockHeader__button:hover {
+    opacity: 0.6;
+    transition: all 0.3s ease 0s;
+}
+
+.blockHeader__button-icon {
+    color: #2195f2;
+    font-size: 3em;
+}
+
+/*content table*/
+.blockTable {
+    position: relative;
+    margin: auto;
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.blockTable__table {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.blockTable__table-head {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 4em;
+    font-size: 1.2em;
+    text-align: left;
+    text-transform: uppercase;
+    color: #2195f2;
+    background: #fff;
+}
+
+.blockTable__table-body tr {
+    height: 4em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.blockTable__table-body tr:hover {
+    background: rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease 0s;
+}
+
+.blockTable__table-body--txtCapitalize {
+    text-transform: capitalize;
+}
